@@ -48,7 +48,7 @@ def adiocionar_alunoENota(lista):
     
     aluno = input("Digite o nome do aluno: ")
     for i in range(1, 4):
-        nota = float(input("Digite a nota do aluno: "))
+        nota = float(input(f"Digite a {i}ª nota do aluno: "))
         soma = soma + nota
     print('\n')
 
