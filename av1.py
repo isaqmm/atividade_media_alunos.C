@@ -46,7 +46,8 @@ def adiocionar_alunoENota(lista):
     soma = 0
     media = 0
     
-    aluno = input("Digite o nome do aluno: ")
+    aluno = str(input("Digite o nome do aluno: "))
+
     for i in range(1, 4):
         nota = float(input(f"Digite a {i}ª nota do aluno: "))
         soma = soma + nota
@@ -71,7 +72,7 @@ def listarAprovados(lista):
     for aluno in lista:
 
         if aluno[1] >= 7:
-            print(f"Aluno: {aluno[0]} | Nota: {aluno[1]:.2f}")
+            print(f"Aluno: {aluno[0]} | Média: {aluno[1]:.2f}")
 
 #LISTA DOS ALUNOS REPROVADOS
 
@@ -86,7 +87,7 @@ def listarReprovados(lista):
     for aluno in lista:
 
         if aluno[1] < 7:
-            print(f"Aluno: {aluno[0]} | Nota: {aluno[1]:.2f}")
+            print(f"Aluno: {aluno[0]} | Média: {aluno[1]:.2f}")
 
 #MENU INTERATIVO DO SISTEMA DE GESTÃO DE NOTAS E MÉDIAS
 
@@ -125,7 +126,7 @@ def menu():
                     print("LISTA DE ALUNOS")
                     print("\n")
                     for aluno in listas_alunos:
-                        print(f"Aluno: {aluno[0]} | Nota: {aluno[1]:.2f}")
+                        print(f"Aluno: {aluno[0]} | Média: {aluno[1]:.2f}")
 
                     print("\n")
                     print("===========")
